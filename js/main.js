@@ -39,11 +39,16 @@
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
     });
-    $('#portfolio-flters li').on('click', function () {
-        $("#portfolio-flters li").removeClass('active');
+
+    $('#portfolio-filters li').on('click', function () {
+        // Remove 'active' class from all filter buttons
+        $("#portfolio-filters li").removeClass('active');
+        // Add 'active' class to the clicked button
         $(this).addClass('active');
 
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
+        // Filter portfolio items based on data-filter value
+        var filterValue = $(this).attr('data-filter');
+        portfolioIsotope.isotope({ filter: filterValue });
     });
 
 
