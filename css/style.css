@@ -9733,3 +9733,34 @@ h4, h5, h6 {
 .sidebar .btn {
   margin-top: 20px;
 }
+.btn-green {
+  background-color: #28a745; /* Green color */
+  border-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.me-auto {
+  margin-right: auto;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
